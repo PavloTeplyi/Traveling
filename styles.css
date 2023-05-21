@@ -29,7 +29,7 @@ font-weight: 400;
 
 
 .header__title {
-    color: aliceblue;
+    color: rgb(252, 252, 252);
     font-size: 1.5em;
 }
 
@@ -58,24 +58,26 @@ font-weight: 400;
     font-size: 1em;
     text-decoration: none;
     transition: color 0.3s;
-    
 }
 
-.section__content1 {
-        display: flex;
-        gap: 100px;
-        justify-content: center;
-        align-items: center;
-        text-align:center ;
+.section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .section__content {
     display: flex;
     gap: 100px;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     width: 80%;
-    text-align:center ;
+    text-align: center;
 }
 
 .section__list {
@@ -210,13 +212,19 @@ font-weight: 400;
     .header__nav {
         font-size: 0.7em;
     }
+    .section__title { 
+        font-size: 1.1em; 
+    }
+
     .tour-cards {
         padding: 0.5rem;
+        margin-bottom: 0.4rem;
     }
     .tour-card {
         width: calc(50% - 1rem);
         margin: 0 0.5rem;
         padding: 0.5rem;
+        margin-bottom: 0.6rem;
     }
     .tour-card__description {
         font-size: 0.7em;
@@ -228,4 +236,62 @@ font-weight: 400;
         padding: 10px;
         margin: 0 10px;
     }
+}
+
+@media screen and (max-width: 580px) {
+    .header__title {
+        font-size: 0.7em;
+    }
+    .header__nav-item {
+        display: none;
+    }
+    .header__nav {
+        display: none;
+    }
+    .section__title { 
+        font-size: 0.8em; 
+    }
+    .section{
+    height: 30vh;
+    }
+
+    .section__content {
+        gap: 20px;
+        width: 100%;
+        font-size: 0.5em;
+    }
+
+    .tour-cards {
+        padding: 0.5rem;
+        margin-bottom: 0.4rem;
+    }
+    .tour-card {
+        width: calc(100% - 1rem);
+        margin: 0 0.5rem;
+        padding: 0.5rem;
+        margin-bottom: 0.7rem;
+    }
+    .tour-card__description {
+        font-size: 0.3em;
+        line-height: 1.2;
+        margin-bottom: 0.5em;
+    }
+    .tour-card__button {
+        font-size: 0.5em;
+        padding: 10px;
+        margin: 0 10px;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .section__list {
+        font-size: 0.5em;
+    }
+    .section__button {
+        font-size: 0.6em;
+        min-width: 10%;
+        padding: 10px;
+        margin: 10px;
+    }
+
 }
