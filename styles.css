@@ -199,3 +199,33 @@ font-weight: 400;
     color: #000000;
     font-size: 1rem;
 }
+
+@media screen and (max-width: 890px) {
+    .header__title {
+        font-size: 1em;
+    }
+    .header__nav-item {
+        margin-left: 10px;
+    }
+    .header__nav {
+        font-size: 0.7em;
+    }
+    .tour-cards {
+        padding: 0.5rem;
+    }
+    .tour-card {
+        width: calc(50% - 1rem);
+        margin: 0 0.5rem;
+        padding: 0.5rem;
+    }
+    .tour-card__description {
+        font-size: 0.7em;
+        line-height: 1.2;
+        margin-bottom: 0.5em;
+    }
+    .tour-card__button {
+        font-size: 0.5em;
+        padding: 10px;
+        margin: 0 10px;
+    }
+}
