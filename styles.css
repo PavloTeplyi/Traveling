@@ -16,13 +16,17 @@ font-weight: 400;
 
 .header {
     display: flex;
+    position: -webkit-sticky;
+    position: sticky;
+    top:0px;
     justify-content: space-between;
     align-items: center;
     background-color: rgb(0, 255, 255);
     flex: 0 0 10%;
     height: 100%;
     padding: 0 15px;
-    }
+}
+
 
 .header__title {
     color: aliceblue;
@@ -38,14 +42,15 @@ font-weight: 400;
     list-style: none;
 }
 
-.header__nav-item {
+.header__nav-link {
     border-radius: 7px;
     margin-left: 25px;
     padding:5px;
 }
 
-.header__nav-item:hover{
+.header__nav-list > li:hover a{
     background-color: rgb(1, 15, 15);
+    color:rgb(0, 255, 255);  
 }
 
 .header__nav-link {
@@ -55,22 +60,6 @@ font-weight: 400;
     transition: color 0.3s;
     
 }
-
-.header__nav-link:hover {
-    color:rgb(0, 255, 255) ;
-}
-
-
-.section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 100vh;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    }
-
 
 .section__content1 {
         display: flex;
